@@ -81,6 +81,27 @@
                 <div class="slider-cardapio">
                     <div class="slider-002 small-12 small-centered columns">
 
+
+                        <?php
+
+                            $server = 'localhost';
+                            $user = 'root';
+                            $password = 'root';
+                            $db_name = 'restaurante';
+                            $port = '8889';
+
+                            $db_connect = new mysqli($server,$user,$password,$db_name,$port);
+                            mysqli_set_charset($db_connect,"utf8"); // para inserir com acentuacao corretamente
+
+                            if ($db_connect->connect_error) {
+                                echo 'Falha: ' . $db_connect->connect_error;
+                            } else {
+                                echo 'Conexão feita com sucesso' . '<br><br>';
+                            }
+                        ?>
+
+
+
                         <div class="cardapio-item-outer bounce-hover small-10 medium-4 columns"> 
                             <div class="cardapio-item">
                                 <a href="camarao-alho.html">
