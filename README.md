@@ -1,2 +1,2 @@
-# loja-roupas
-Projeto para uma loja de roupas. Feito em PHP.
+# restaurante
+Projeto site para um restaurante. Feito em PHP.
